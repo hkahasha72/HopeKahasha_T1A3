@@ -36,6 +36,9 @@ def run_driver_test():
     print('Hello, ' + my_name + ' today youll be taking a practice drivers test which will help you prepare for the real thing, you will have 25 minutes to complete this test and must answer at least 26 out of the 32 questions correctly ')
     print("Let's begin!\n")
     
+    # Gives reader time to read the description before the test starts
+    time.sleep(7)
+
     # option which Shuffles the questions
     random.shuffle(questions)
 

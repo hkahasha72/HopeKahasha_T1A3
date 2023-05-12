@@ -1,5 +1,5 @@
 import random
-
+import time 
 
 
 # This Section is the Defined, questions + answers for the driver's test, plus the hints 

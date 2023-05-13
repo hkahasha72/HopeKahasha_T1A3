@@ -1,5 +1,7 @@
 # LetsDrive README.md
 
+### Description:
+LetsDrive is an interactive mobile application designed to help users practice for their driver's test. The app provides a simulated environment that resembles a legitimate driver's test, offering various features to enhance learning and track progress. It includes a built-in timer, feedback system, progress tracking, and personalized hints, LetsDrive ensures users feel confident and prepared for their real driver's test.
 
 ##### Link to your source control repository:
 
@@ -8,7 +10,7 @@
 colorama - init, Fore, Style
 
 
-#### Features in app:
+#### Features in app
 
 ###### Timer: 
 LetsDrive includes a timer which mimic the time constraints of a real driver's test allowing them to improve their speed and time management skills.
@@ -24,6 +26,9 @@ LetsDrive calculates the minimum number of correct answers needed in order to pa
 
 ###### Progress Tracking: 
 LetsDrive maintains a user profile that stores performance history, allowing users to track their progress at the end which presents a comprehensive overview of past sessions, scores, and areas of improvement, enabling users to focus on weak points.
+
+###### Feedback system:
+Gives users feedback about how much more point they need in order to improve their score which would allow them to pass the amount of correct questions they need
 
 
 
@@ -59,3 +64,4 @@ You must include:
 ###### how to use any command line arguments made for the application
 
 # References
+- Colorama install:  https://blog.finxter.com/how-to-install-colorama-in-python/  ,, https://www.youtube.com/watch?v=u51Zjlnui4Y 

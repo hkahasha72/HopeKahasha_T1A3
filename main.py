@@ -2,6 +2,7 @@ import time
 from colorama import init, Fore, Style
 import json
 from inputimeout import inputimeout, TimeoutOccurred
+import random
 
 # Initialize colorama
 init(autoreset=True)
@@ -9,6 +10,9 @@ init(autoreset=True)
 # allows access to JSON
 with open('test_question.json') as f:
     test_question = json.load(f)
+
+# Shuffle the questions
+random.shuffle(test_question['test_question'])
 
 # Defines
 def display_question(question):
@@ -35,7 +39,7 @@ def run_driver_test():
     # Gives the reader time to read the description before the test starts
     time.sleep(3)
 
-    # Iterate through the questions
+    # Iterate through the questions and implement the inputimeout function
     for question in test_question['test_question']:
         display_question(question)
         try:
@@ -55,7 +59,7 @@ def run_driver_test():
 
         print()
 
-    # Calculates the user's passing score
+    # Calculates the user's score and whether it's a passing score
     passing_score = int(0.8 * total_questions())
 
     print(Fore.BLUE + "Test complete, " + my_name + "!")
@@ -70,6 +74,9 @@ def run_driver_test():
             print(Fore.YELLOW + f"\nQuestion {i+1}:")
             print(question['question'])
             print("Correct Answer:", question['answer'])
+
+        additional_correct_needed = passing_score - score
+        print(Fore.BLUE + f"You need to answer {additional_correct_needed} more questions correctly to pass the LetsDrive test.")
 
 # Runs the test
 run_driver_test()

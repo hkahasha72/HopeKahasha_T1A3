@@ -7,12 +7,9 @@ import random
 # Initialize colorama
 init(autoreset=True)
 
-# allows access to JSON
+# Allows access to JSON
 with open('test_question.json') as f:
     test_question = json.load(f)
-
-# Shuffle the questions
-random.shuffle(test_question['test_question'])
 
 # Defines
 def display_question(question):
@@ -26,6 +23,10 @@ def display_question(question):
 def total_questions():
     return len(test_question['test_question'])
 
+# Function to shuffle the questions into random orders 
+def shuffle_questions():
+    random.shuffle(test_question['test_question'])
+
 # Defines
 def run_driver_test():
     score = 0
@@ -38,6 +39,9 @@ def run_driver_test():
 
     # Gives the reader time to read the description before the test starts
     time.sleep(3)
+
+    # Shuffle the questions
+    shuffle_questions()
 
     # Iterate through the questions and implement the inputimeout function
     for question in test_question['test_question']:
@@ -79,4 +83,5 @@ def run_driver_test():
         print(Fore.BLUE + f"You need to answer {additional_correct_needed} more questions correctly to pass the LetsDrive test.")
 
 # Runs the test
+shuffle_questions()
 run_driver_test()

@@ -1,6 +1,7 @@
 import time
 from colorama import init, Fore, Style
 import json
+from inputimeout import inputimeout, TimeoutOccurred
 
 # Initialize colorama
 init(autoreset=True)
@@ -37,15 +38,20 @@ def run_driver_test():
     # Iterate through the questions
     for question in test_question['test_question']:
         display_question(question)
-        user_answer = input(Fore.WHITE + "Enter answer A, B, C: ").strip().upper()
+        try:
+            user_answer = inputimeout(prompt=Fore.WHITE + "Enter answer A, B, C: ", timeout=7)
+            user_answer = user_answer.strip().upper()
 
-        # Check the answer
-        if user_answer == question['answer'].upper():
-            score += 1
-            print(Fore.GREEN + "Correct!")
-        else:
+            # Check the answer
+            if user_answer == question['answer'].upper():
+                score += 1
+                print(Fore.GREEN + "Correct!")
+            else:
+                incorrect_answers.append(question)
+                print(Fore.RED + "Incorrect!")
+        except TimeoutOccurred:
+            print(Fore.RED + "Time's up! Moving on to the next question.")
             incorrect_answers.append(question)
-            print(Fore.RED + "Incorrect!")
 
         print()
 
@@ -67,4 +73,3 @@ def run_driver_test():
 
 # Runs the test
 run_driver_test()
-

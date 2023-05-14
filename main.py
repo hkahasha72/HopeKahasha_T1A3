@@ -50,7 +50,7 @@ def run_driver_test():
             user_answer = inputimeout(prompt=Fore.WHITE + "Enter answer A, B, C: ", timeout=7)
             user_answer = user_answer.strip().upper()
 
-            # Check the answer
+            # Checks the users answer to question
             if user_answer == question['answer'].upper():
                 score += 1
                 print(Fore.GREEN + "Correct!")
@@ -60,10 +60,13 @@ def run_driver_test():
         except TimeoutOccurred:
             print(Fore.RED + "Time's up! Moving on to the next question.")
             incorrect_answers.append(question)
+        except Exception as e:
+            print(Fore.RED + "An error occurred:", str(e))
+            incorrect_answers.append(question)
 
         print()
 
-    # Calculates the user's score and whether it's a passing score
+    # Calculates the users score and if its a passing score
     passing_score = int(0.8 * total_questions())
 
     print(Fore.BLUE + "Test complete, " + my_name + "!")
@@ -85,3 +88,4 @@ def run_driver_test():
 # Runs the test
 shuffle_questions()
 run_driver_test()
+

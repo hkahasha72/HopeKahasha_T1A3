@@ -3,7 +3,6 @@ from colorama import init, Fore, Style
 import json
 from inputimeout import inputimeout, TimeoutOccurred
 import random
-import pytest
 
 # Initialize colorama
 init(autoreset=True)

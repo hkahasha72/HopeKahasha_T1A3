@@ -1,22 +1,306 @@
 {    
     "test_question": [
-        {
-            "question": "You are in a crash. The police are not in attendance. Someone is injured. What should you do?",
-            "options": ["a","b","c"],
-            "answer": "A",
-            "hint": "it requires immediate action"
-        },
-        {
-            "question": "What should you do when a worker on the road in front of you is holding a yellow circular sign that displays the text Slowly sign?",
-            "options": ["a","b","c"],
-            "answer": "A",
-            "hint": "Its implied on the sign"
-        },
-        {
-            "question": "When is vehicle A allowed to turn right?",
-            "options": ["a","b","c"],
-            "answer": "A",
-            "hint": "Using a hands-free system allows you to communicate safely while driving."
-        }
+        
+              {
+                "question": "You are driving on a two-lane road. You see a bus ahead signalling to pull out from a bus stop. You should",
+                "options": [
+                  "A: Slow down and be prepared to give way to the bus.",
+                  "B: Sound your horn to stop the bus from pulling out.",
+                  "C: Speed up to overtake the bus."
+                ],
+                "answer": "A",
+                "hint": "You would apply this same act when at a zebra crossing"
+              },
+              {
+                "question": "What should you do if you miss your exit on a freeway?",
+                "options": [
+                  "A: Stop and reverse back to the exit.",
+                  "B: Continue driving and take the next exit.",
+                  "C: Pull over and wait for assistance."
+                ],
+                "answer": "B",
+                "hint": "An option which is the safest"
+              },
+              {
+                "question": "You are driving on a freeway and see an ambulance with flashing lights behind you. You should",
+                "options": [
+                  "A: Slow down and let the ambulance overtake you.",
+                  "B: Pull over to the left and stop if possible.",
+                  "C: Speed up to get out of the way quickly."
+                ],
+                "answer": "B",
+                "hint": "Ambulence with flashing lights have right of way"
+              },
+              {
+                "question": "You are driving at night and another vehicle is approaching from the opposite direction. When should you dip your headlights?",
+                "options": [
+                  "A: When the other vehicle is 500 metres away.",
+                  "B: When the other vehicle is 200 metres away.",
+                  "C: When the other vehicle is 50 metres away."
+                ],
+                "answer": "B",
+                "hint": "how far do you think headlights reach the opposite direction"
+              },
+              {
+                "question": "You are driving and need to use your mobile phone. What should you do?",
+                "options": [
+                  "A: Use it only when you are stopped at traffic lights.",
+                  "B: Pull over to the side of the road and park before using it.",
+                  "C: Use a hands-free device to make a call."
+                ],
+                "answer": "B",
+                "hint": "Which act is safest and doesnt sway your attention from the road?"
+              },
+            {
+                "question": "Which vehicles are allowed to load or unload in a truck zone?",
+                "options": [
+                  "A: Courier cars",
+                  "B: Passenger cars",
+                  "C: Vehicles with a gross vehicle mass over 4.5 tonnes"
+                ],
+                "answer": "C",
+                "hint": "Truck zones are designated for vehicles with a gross vehicle mass"
+              },
+              {
+                "question": "You are driving towards a pedestrian crossing. A pedestrian steps onto the crossing without looking. Who is responsible for avoiding a collision?",
+                "options": [
+                  "A: It is the pedestrian's responsibility to look before stepping onto the crossing.",
+                  "B: It is your responsibility to approach a pedestrian crossing at a speed which will let you avoid a collision.",
+                  "C: It is your responsibility to stop only if the pedestrian is a child."
+                ],
+                "answer": "B",
+                "hint": "Pedstrians have right of way"
+              },
+              {
+                "question": "A tram stops ahead of your vehicle. Pedestrians get off the tram and wait to cross in front of you. You must stop",
+                "options": [
+                  "A: Level with the driver's door.",
+                  "B: Level with the rear door.",
+                  "C: Level with the rear of the tram."
+                ],
+                "answer": "C",
+                "hint": "which level allows for pedestrians to safely cross."
+              },
+              {
+                "question": "You are driving on a multi-lane freeway. There are no transit lanes. When are you allowed to drive in the right lane?",
+                "options": [
+                  "A: At any time",
+                  "B: Only if you are travelling at the speed limit",
+                  "C: Only to overtake or when the road is congested"
+                ],
+                "answer": "C",
+                "hint": "On a multi-lane freeway without transit lanes, you are allowed to drive in the right lane only for overtaking other vehicles or when the road is congested."
+              },
+              {
+                "question": "What does a sign saying Warragul exit 2km mean?",
+                "options": [
+                  "A: Exit immediately for Warragul.",
+                  "B: The exit to Warragul is 2 km away.",
+                  "C: Warragul is 2 km away."
+                ],
+                "answer": "B",
+                "hint": "an exit is..."
+              },
+              {
+                "question": "You are driving along a road with overhead lane signals. Which lane are you allowed to use?",
+                "options": [
+                  "A: A lane under a red X",
+                  "B: Any lane",
+                  "C: Any lane under a green or white arrow"
+                ],
+                "answer": "C",
+                "hint": "Pay attention to the overhead lane signals."
+              },
+              {
+                "question": "You are driving vehicle A when a tennis ball rolls onto the road ahead of you. You should",
+                "options": [
+                  "A: immediately brake as hard as possible.",
+                  "B: swerve into the opposite (oncoming) lane.",
+                  "C: touch the brakes and prepare to slow down."
+                ],
+                "answer": "C",
+                "hint": "When encountering a tennis ball or any object on the road, it is important to maintain control of your vehicle by..."
+              },
+              {
+                "question": "You want to reduce your risk of crashing as a new solo driver. What is the most important thing you can do before you get your licence?",
+                "options": [
+                  "A: Have at least 120 hours of supervised driving experience in a wide range of driving conditions.",
+                  "B: Have ten driving lessons from a qualified instructor.",
+                  "C: Practise driving on your own in a safe area off the road."
+                ],
+                "answer": "A",
+                "hint": "To reduce the risk of crashing as a new solo driver, gaining substantial supervised driving experience"
+              },
+              {
+                "question": "You are driving while very tired. You suddenly realize you cannot remember the last few kilometers of road. You should",
+                "options": [
+                  "A: drive faster to frighten yourself into staying awake.",
+                  "B: open a window and keep driving.",
+                  "C: pull over and sleep."
+                ],
+                "answer": "C",
+                "hint": "When experiencing extreme tiredness and signs of impaired awareness, it is crucial to prioritize safety "
+              },
+              {
+                "question": "\"Most driving shouldn't be surprising.\" Why not?",
+                "options": [
+                  "A: Because driving is boring but necessary.",
+                  "B: You should be anticipating what will happen next.",
+                  "C: You should never drive in situations that might surprise you."
+                ],
+                "answer": "B",
+                "hint": "Maintaining awareness and anticipating potential driving scenarios helps to prevent "
+              },
+              {
+                "question": "A driving log is useful for you as a learner driver because it",
+                "options": [
+                  "A: enables you to check that you have experienced a wide range of driving conditions.",
+                  "B: helps you to find which is the best route to take.",
+                  "C: includes facts about giving way to other vehicles on the road."
+                ],
+                "answer": "A",
+                "hint": "Keeping a driving log helps you ensure that you have encountered various..."
+              },
+              {
+                "question": "When are you allowed to drive above the speed limit?",
+                "options": [
+                  "A: In an emergency",
+                  "B: Never",
+                  "C: When overtaking on a freeway"
+                ],
+                "answer": "A",
+                "hint": "...action is necessary to prevent harm or danger."
+              },
+              {
+                "question": "When are you allowed to use your vehicle's horn?",
+                "options": [
+                  "A: To inform other drivers of a dangerous situation further along the road",
+                  "B: To let other drivers know that they are driving too fast",
+                  "C: To warn other drivers of your position on the road"
+                ],
+                "answer": "C",
+                "hint": "The primary purpose of using your vehicle's horn is to communicate..."
+              },
+              {
+                "question": "You are driving in a built-up area. There are no signs indicating a speed limit. What is the maximum speed you are allowed to drive?",
+                "options": [
+                  "A: 40 km/h",
+                  "B: 50 km/h",
+                  "C: 60 km/h"
+                ],
+                "answer": "B",
+                "hint": "In the absence of posted speed limit signs in a built-up area, the default maximum speed limit is typically 50 km/h unless otherwise specified."
+              },
+              {
+                "question": "The outside mirrors of your car should be adjusted so that a part of the mirror shows",
+                "options": [
+                  "A: the edge of your car.",
+                  "B: the inside of your car.",
+                  "C: your reflection."
+                ],
+                "answer": "A",
+                "hint": "When adjusting the outside mirrors, it is important to set them in a way that allows you to see the edge of your car, minimizing blind spots."
+              },
+              {
+                "question": "What should you do with your eyes while driving?",
+                "options": [
+                  "A: Focus your eyes on the vehicle in front.",
+                  "B: Keep watching the traffic all around you.",
+                  "C: Keep your eyes fixed on the rearview mirror."
+                ],
+                "answer": "B",
+                "hint": "Maintaining awareness of the traffic all around you by continuously scanning and checking mirrors helps ensure safe driving and early detection of potential hazards."
+              },
+              {
+                "question": "Your vehicle breaks down at the side of the road. What should you do?",
+                "options": [
+                  "A: Put your headlights on full beam.",
+                  "B: Turn on your hazard warning lights.",
+                  "C: Turn on your right indicator."
+                ],
+                "answer": "B",
+                "hint": "When your vehicle breaks down at the side of the road, activating your hazard warning lights alerts other drivers to the situation and helps ensure your safety."
+              },
+              {
+                "question": "You are travelling at 50 km/h on a dry road. It takes 35 metres to stop. What happens when the road is wet?",
+                "options": [
+                  "A: The weather conditions do not affect the braking distance.",
+                  "B: You need less than 35 metres to stop.",
+                  "C: You need more than 35 metres to stop."
+                ],
+                "answer": "C",
+                "hint": "When the road is wet, the braking distance increases due to reduced tire traction, meaning it will take more than 35 metres to stop."
+              },
+              {
+                "question": "What does a sign displaying the number 100 tell you?",
+                "options": [
+                  "A: The maximum speed at which you can travel",
+                  "B: The minimum speed at which you can travel",
+                  "C: The recommended speed at which you should travel"
+                ],
+                "answer": "A",
+                "hint": "A sign displaying the number 100 indicates the maximum speed at which you can legally travel on that particular road or section."
+              },
+              {
+                "question": "A red traffic light means that you must...",
+                "options": [
+                  "A: Enter the intersection slowly.",
+                  "B: Slow down before the intersection.",
+                  "C: Stop before entering the intersection."
+                ],
+                "answer": "C",
+                "hint": "When you encounter a red traffic light, it is imperative to come to a complete stop before entering the intersection."
+              },
+              {
+                "question": "There are no lane markings on the road. When are you allowed to overtake the vehicle in front of you?",
+                "options": [
+                  "A: At any time",
+                  "B: If you signal and it is safe to do so",
+                  "C: Never"
+                ],
+                "answer": "B",
+                "hint": "In the absence of lane markings, you may overtake the vehicle in front of you if you signal your intention and it is safe to do so, ensuring proper judgment and consideration for other road users."
+              },
+              {
+                "question": "Your blood alcohol concentration (BAC) level is .15 which is well over the limit. What is the risk of crashing if you drive?",
+                "options": [
+                  "A: Your risk of crashing is greatly increased compared to a BAC at the legal limit.",
+                  "B: Your risk of crashing is slightly higher compared to a BAC at the legal limit.",
+                  "C: Your risk of crashing is the same as it is for a BAC level at the legal limit."
+                ],
+                "answer": "A",
+                "hint": "Having a blood alcohol concentration (BAC) level well over the legal limit greatly increases the risk of crashing, as alcohol impairs driving abilities and judgment."
+              },
+              {
+                "question": "Just before you enter an intersection, the traffic signal turns red. What should you do?",
+                "options": [
+                  "A: Accelerate to get across the intersection quickly.",
+                  "B: Slow down and check for vehicles on your right before you cross.",
+                  "C: Stop."
+                ],
+                "answer": "C",
+                "hint": "When the traffic signal turns red just before entering an intersection, you must come to a complete stop and wait for the signal to turn green before proceeding."
+              },
+              {
+                "question": "When is the surface of a sealed road likely to be most slippery?",
+                "options": [
+                  "A: After several hours of rain",
+                  "B: When it begins to rain",
+                  "C: When it has not rained for weeks"
+                ],
+                "answer": "B",
+                "hint": "The surface of a sealed road is likely to be most slippery when it begins to rain, as the rain mixes with the oils and substances on the road, creating a slippery surface."
+              },
+              {
+                "question": "A vehicle making a U-turn must give way to",
+                "options": [
+                  "A: All vehicles and pedestrians.",
+                  "B: Oncoming traffic only.",
+                  "C: Traffic overtaking it only."
+                ],
+                "answer": "A",
+                "hint": "When making a U-turn, it is necessary to give way to all vehicles and pedestrians, ensuring a safe maneuver."
+              }             
+
     ]
 }

@@ -3,6 +3,7 @@ from colorama import init, Fore, Style
 import json
 from inputimeout import inputimeout, TimeoutOccurred
 import random
+import pytest
 
 # Initialize colorama
 init(autoreset=True)
@@ -34,7 +35,7 @@ def run_driver_test():
 
     print(Fore.GREEN + "Welcome to LetsDrive! the VIC Drivers Learner Test Practice app! Input your name to start")
     my_name = input()
-    print('Hello, ' + my_name + ' today you\'ll be taking a practice driver\'s test which will help you prepare for the real thing. You will have 25 minutes to complete this test and must answer at least 26 out of the 32 questions correctly.')
+    print('Hello, ' + my_name + ' today you\'ll be taking a practice driver\'s test which will help you prepare for the real thing. You will have 32 minutes (1 minute per question) to complete this test and must answer at least 26 out of the 32 questions correctly.')
     print("Let's begin!\n")
 
     # Gives the reader time to read the description before the test starts
@@ -47,10 +48,10 @@ def run_driver_test():
     for question in test_question['test_question']:
         display_question(question)
         try:
-            user_answer = inputimeout(prompt=Fore.WHITE + "Enter answer A, B, C: ", timeout=7)
+            user_answer = inputimeout(prompt=Fore.WHITE + "Enter answer A, B, C: ", timeout=60)
             user_answer = user_answer.strip().upper()
 
-            # Checks the users answer to question
+            # Check the answer
             if user_answer == question['answer'].upper():
                 score += 1
                 print(Fore.GREEN + "Correct!")
@@ -66,7 +67,7 @@ def run_driver_test():
 
         print()
 
-    # Calculates the users score and if its a passing score
+    # Calculates the user's score and whether it's a passing score
     passing_score = int(0.8 * total_questions())
 
     print(Fore.BLUE + "Test complete, " + my_name + "!")

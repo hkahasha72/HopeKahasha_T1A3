@@ -5,6 +5,8 @@ LetsDrive is an interactive mobile application designed to help users practice f
 
 ##### Link to your source control repository:
 
+#### - Link to presentation
+https://www.youtube.com/watch?v=wbalWN4CNf0
 
 #### Code style guide or styling conventions that the application will adhere to:
 colorama - init, Fore, Style
@@ -50,18 +52,33 @@ The use of `try-except` block uses a form of error handling to take care of the 
 
 
 ##### reference to an accessible project management platform used to track this implementation plan. 
-
-
-> Your checklists for each feature should have at least 5 items.
+https://trello.com/b/Jxdpk3m8/project-management
 
 R8	
 #### help documentation which includes a set of instructions which accurately describe how to use and install the application.
 
-You must include:
-###### steps to install the application
-###### dependencies required by the application to operate
-###### any system/hardware requirements
-###### how to use any command line arguments made for the application
+###### Step 1: Install Dependencies
+   - Install Python installed system.
+   - Install pip so that this command can be ran:
+     'python3 -m pip install colorama inputimeout'
+
+###### Step 2: System/Hardware Requirements
+   - The application needs to run on a working Python installation such as Python 3.7+
+
+###### Step 3: Run the Application
+   - Save the code in a file with a `.py` extension, e.g., `main.py`.
+   - Open terminal and navigate to the directory where you have saved the file
+   - Run the application using the following command:
+     python3 main.py
+
+###### Step 4: Interacting with the Application
+   - Once the application starts, it will ask you to input your name.
+   - Follow the instructions displayed on the screen to take the practice test.
+   - Answer the question by entering A, B, or C as your choice, or else itll be marked as incorrect.
+   - You will have 32 minutes (1 minute per question) to complete the test.
+   - After answering all the questions, the application will display your score and whether you have answered enough questions correctly to have passed the test.
+   - If you don't answer within the time limit (1 minute) then the application will move on to the next question automatically.
+   - If any errors occur during the execution the they will be displayed on the screen.
 
 # References
 - Source of Questions https://www.bigdream.com.au/driver-knowledge-test/vic
